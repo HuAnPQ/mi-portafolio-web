@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
     <form className="mt-16 text-center">
         <label
-            for="contact-content"
+            htmlFor="contact-content"
             className="block text-green-700 text-sm font-bold mb-2">
             Cuéntame de tu proyecto, el cual quieres mejorar:
         </label>
