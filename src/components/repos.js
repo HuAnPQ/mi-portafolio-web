@@ -6,11 +6,23 @@ export default () => {
 
     const [Repos, setRepos] = useState([]);
 
-    useEffect( () => {
+    useEffect(() => {
+        const key = "repos";
+        let myRepos = sessionStorage.getItem(key);
+
+        if (myRepos) {
+            myRepos = JSON.parse(myRepos);
+            myRepos = myRepos.slice(1, 13);
+            return setRepos(myRepos);
+        }
+
         async function fetchRepos() {
-            const response = await fetch("https://api.github.com/users/codigofacilito/repos");
-            //https://api.github.com/users/HuAnPQ/repos
-            let myRepos = await response.json();
+            const endpoint = "https://api.github.com/users/codigofacilito/repos"; //HuAnPQ
+
+            myRepos = await fetch(endpoint).then(r => r.json());
+            sessionStorage.setItem(key, JSON.stringify(myRepos));
+
+            myRepos = myRepos.slice(1, 13);
             setRepos(myRepos);
         }
         fetchRepos();
