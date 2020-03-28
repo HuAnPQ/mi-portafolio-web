@@ -1,0 +1,111 @@
+{
+    "data": {
+        "email": "h_ponce@hotmail.es",
+        "username": "HuAn26",
+        "certificates": [
+            {
+                "score": 10,
+                "code": "44c77dde-bd6b-46cb-972d-a8b0f44ab63a",
+                "title": "Curso Profesional de Android"
+            }
+        ],
+        "articles": [],
+        "courses": [
+            {
+                "title": "Curso para crear tu primera página web Gratis",
+                "progress": "34.0",
+                "url": "http://codigofacilito.com/courses/primera_pagina"
+            },
+            {
+                "title": "Curso de Bases de Datos Gratis",
+                "progress": "40.0",
+                "url": "http://codigofacilito.com/courses/bases_datos"
+            },
+            {
+                "title": "Curso de Android con Eclipse",
+                "progress": "0.0",
+                "url": "http://codigofacilito.com/courses/android_old"
+            },
+            {
+                "title": "Pruebas unitarias con PHP",
+                "progress": "64.0",
+                "url": "http://codigofacilito.com/courses/php-testing"
+            },
+            {
+                "title": "Curso Profesional de Python",
+                "progress": "1.0",
+                "url": "http://codigofacilito.com/courses/python-profesional"
+            },
+            {
+                "title": "Crea un sitio personal con Gatsby",
+                "progress": "100.0",
+                "url": "http://codigofacilito.com/courses/sitio-persional-gatsby"
+            },
+            {
+                "title": "Curso de Fundamentos de React",
+                "progress": "100.0",
+                "url": "http://codigofacilito.com/courses/react-intro-gratis"
+            },
+            {
+                "title": "Curso de introducción a la programación",
+                "progress": "2.0",
+                "url": "http://codigofacilito.com/courses/introduccion"
+            },
+            {
+                "title": "Curso de introducción a los Algoritmos",
+                "progress": "0.0",
+                "url": "http://codigofacilito.com/courses/algoritmos"
+            },
+            {
+                "title": "Curso de Introducción a la Programación Nivel II",
+                "progress": "0.0",
+                "url": "http://codigofacilito.com/courses/fundamentos-programacion"
+            },
+            {
+                "title": "Curso de Programación Orientada a Objetos",
+                "progress": "0.0",
+                "url": "http://codigofacilito.com/courses/programacion-orientada-a-objetos"
+            },
+            {
+                "title": "Curso para crear un juego con Pygame",
+                "progress": "0.0",
+                "url": "http://codigofacilito.com/courses/pygame-videojuego"
+            },
+            {
+                "title": "Programación funcional con c#",
+                "progress": "0.0",
+                "url": "http://codigofacilito.com/courses/funcional-csharp"
+            },
+            {
+                "title": "Curso Profesional de Android",
+                "progress": "100.0",
+                "url": "http://codigofacilito.com/courses/android-profesional"
+            },
+            {
+                "title": "Curso de Docker",
+                "progress": "13.0",
+                "url": "http://codigofacilito.com/courses/docker"
+            },
+            {
+                "title": "El glosario del JAMStack",
+                "progress": "9.0",
+                "url": "http://codigofacilito.com/courses/glosario-jamstack"
+            }
+        ],
+        "finished_courses": [
+            {
+                "title": "Crea un sitio personal con Gatsby",
+                "url": "http://codigofacilito.com/courses/sitio-persional-gatsby"
+            },
+            {
+                "title": "Curso de Fundamentos de React",
+                "url": "http://codigofacilito.com/courses/react-intro-gratis"
+            },
+            {
+                "title": "Curso Profesional de Android",
+                "url": "http://codigofacilito.com/courses/android-profesional"
+            }
+        ]
+    },
+    "errors": []
+}
