@@ -31,12 +31,12 @@ export default () => {
                 title={"Mis certificados online en CódigoFacilito"}
             />
 
-            <Posts
-                data={data.codigofacilitoJson.data.courses}
-                card={Course}
-                title={"Mis cursos en CódigoFacilito"}
-            />
-        </section>
+                <Posts
+                    data={data.codigofacilitoJson.data.courses}
+                    card={Course}
+                    title={"Mis cursos en CódigoFacilito"}
+                />
+        </section >
     );
 
 };
