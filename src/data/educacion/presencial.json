@@ -1,0 +1,17 @@
+{
+    "slug": "presencial",
+    "title": "Formación académica",
+    "description": "Formación académica, grados de estudio e instituciones a las que asistí",
+    "items": [
+        {
+            "name": "Universidad Laica Eloy Alfaro de Manabí",
+            "degree": "Ingeniero en Sistemas",
+            "score": "9.2"
+        },
+        {
+            "name": "Colegio Nacional Alejo Lascano",
+            "score": "Técnico en Comercio y administración, especialización en Administración de sistemas",
+            "degree": "9.6"
+        }
+    ]
+}

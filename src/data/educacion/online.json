@@ -1,0 +1,19 @@
+{
+    "slug": "online",
+    "title": "Cursos en línea",
+    "description": "Cursos finalizados en plataformas de educación en internet.",
+    "items": [
+        {
+            "name": "Crea un sitio personal con Gatsby",
+            "url": "http://codigofacilito.com/courses/sitio-persional-gatsby"
+        },
+        {
+            "name": "Curso de Fundamentos de React",
+            "url": "http://codigofacilito.com/courses/react-intro-gratis"
+        },
+        {
+            "name": "Curso Profesional de Android",
+            "url": "http://codigofacilito.com/courses/android-profesional"
+        }
+    ]
+}

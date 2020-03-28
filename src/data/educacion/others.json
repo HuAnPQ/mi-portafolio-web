@@ -1,0 +1,37 @@
+{
+    "slug": "others",
+    "title": "Otros logros académicos",
+    "description": "Talleres, diplomas y conferencias en las que he participado",
+    "items": [
+        {
+            "name": "Concurso de Programación PHOENIX CHALLERNGER",
+            "description": "Participación en el primer concurso Nacional de Programación de la Universidad de Cuenca.",
+            "place": "Universidad de Cuenca",
+            "date": "06/2013"
+        },
+        {
+            "name": "Taller Marketing Digital",
+            "description": "Seminario tipo taller de las técnicas y prácticas recomendadas para el uso de Marketing Digital.",
+            "place": "Facultad de Ciencias Informáticas-ULEAM",
+            "date": "10/2014"
+        },
+        {
+            "name": "Security Fundamentals",
+            "description": "Certificación Microsoft Technology Associate.",
+            "place": "Facultad de Ciencias Informáticas-ULEAM",
+            "date": "10/2015"
+        },
+        {
+            "name": "Database Administration Fundamentals",
+            "description": "Certificación Microsoft Technology Associate.",
+            "place": "Facultad de Ciencias Informáticas-ULEAM",
+            "date": "11/2015"
+        },
+        {
+            "name": "Software Development Fundamentals",
+            "description": "Certificación Microsoft Technology Associate.",
+            "place": "Facultad de Ciencias Informáticas-ULEAM",
+            "date": "12/2015"
+        }
+    ]
+}
