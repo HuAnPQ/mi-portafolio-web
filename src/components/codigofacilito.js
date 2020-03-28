@@ -1,5 +1,8 @@
 import React from 'react';
 import { useStaticQuery, grap, graphql } from 'gatsby';
+import Posts from './posts';
+import Certificate from './certificate';
+import Course from './course';
 
 export default () => {
     const data = useStaticQuery(graphql`{
@@ -22,45 +25,17 @@ export default () => {
     //console.log('data :', data);
     return (
         <section className="my-12">
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold text-center">
-                    Mis certificados online en CódigoFacilito
-                    </h2>
-                <div className="flex mt-6">
-                    {
-                        data.codigofacilitoJson.data.certificates.map(certificado => (
-                            <div className="shadow p-4 bg-white mr-4 rounded">
-                                <h4 className="font-bold">{certificado.title}</h4>
-                                <div className="text-center">
-                                    <span className="inline-block bg-green-200 text-green-700 p-2 radius">
-                                        Calificacíon: {certificado.score}
-                                    </span>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
+            <Posts
+                data={data.codigofacilitoJson.data.certificates}
+                card={Certificate}
+                title={"Mis certificados online en CódigoFacilito"}
+            />
 
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold text-center">
-                    Mis cursos
-                    </h2>
-                <div className="flex mt-6">
-                    {
-                        data.codigofacilitoJson.data.courses.map(course => (
-                            <div className="shadow p-4 bg-white mr-4 rounded">
-                                <h4 className="font-bold">{course.title}</h4>
-                                <div className="text-center">
-                                    <span className="inline-block bg-green-200 text-green-700 p-2 radius">
-                                        Proceso: {course.progress}
-                                    </span>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
+            <Posts
+                data={data.codigofacilitoJson.data.courses}
+                card={Course}
+                title={"Mis cursos en CódigoFacilito"}
+            />
         </section>
     );
 
