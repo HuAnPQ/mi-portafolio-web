@@ -10,7 +10,7 @@ export default () => (
                     <h1 className="font-bold text-green-700 text-6xl">
                         Hola! Soy Hugo
                     </h1>
-                    <p className="text-xl font-light">QA Testing Técnico - TTA (Produbanco)</p>
+                    <p className="text-lg font-light">QA Testing Técnico - TTA (Produbanco)</p>
                 </div>
                 <img src={ilustracion} alt="Imagen de QA Testing"
                     style={{ height: "300px", width: "500px" }}
