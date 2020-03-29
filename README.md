@@ -97,3 +97,51 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+# Crea un sitio personal con Gatsby
+
+Estos son mis apuntes tomados del curso de codigofacilito
+
+##Prerequisitos
+
+```shell
+$ node -v
+$ git --version
+$ npm install -g gatsby-cli
+$ gatsby -v  --Gatsby CLI version: 2.11.3
+$ gatsby -h
+```
+
+## Start developing.	*****
+```shell
+$ cd mi-portafolio-web/
+$ gatsby develop
+```
+Your site is now running at http://localhost:8000
+
+## Install tailwind in Project - VScode
+```shell
+$ npm install tailwindcss
+$ npx tailwindcss init
+```
+
+## Install Plugin-PostCSS in Project - VScode
+```shell
+$ npm install --save gatsby-plugin-postcss
+```
+//COMIT - Integrar tailwindcss
+
+
+http://undraw.co/illustrations
+Imagenes para usar en el portafolio-web
+
+
+## GraphQL
+```shell
+$ npm install gatsby-transformer-json
+$ npm install gatsby-source-filesystem
+```
+
+
+
+

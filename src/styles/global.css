@@ -13,9 +13,7 @@ body{
 }
 
 .repos-list{
-    column-width: 50%;
     columns: 2;
-    -moz-columns: 2;
     column-rule: 1px solid;
     @apply p-4;
 }
