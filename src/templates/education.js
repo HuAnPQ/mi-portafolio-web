@@ -1,5 +1,6 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import EdNav from '../components/education-nav';
 
 export default (props) => {
     const pageData = props.data.educacionJson;
@@ -7,6 +8,7 @@ export default (props) => {
         <div>
             <header className="py-12 border-green-500 border-solid border-t-8">
                 <div className="max-w-4xl mx-auto">
+                    <Link to="/" className="uppercase underline text-blue-500">Regresar al inicio</Link>
                     <h2 className="capitalize text-6xl font-bold">{pageData.title}</h2>
                     <p className="text-xl">{pageData.description}</p>
                 </div>
@@ -14,7 +16,7 @@ export default (props) => {
             <ul>
                 {
                     pageData.items.map((item, index) => (
-                        <li className="bg-white shadow mt-4 flex" key="{index}">
+                        <li className="bg-white shadow mt-4 mx-4 flex" key="{index}">
                             <p className="vertical-text">{pageData.slug}</p>
                             <div className="flex items-center flex-1 p-8">
                                 <div className="flex-1">
@@ -53,6 +55,7 @@ export default (props) => {
                     ))
                 }
             </ul>
+            <EdNav />
         </div>
     );
 }

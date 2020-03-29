@@ -21,7 +21,7 @@ export default () => {
         }
 
         async function fetchRepos() {
-            const endpoint = "https://api.github.com/users/codigofacilito/repos"; //HuAnPQ
+            const endpoint = "https://api.github.com/users/HuAnPQ/repos"; //HuAnPQ
 
             myRepos = await fetch(endpoint).then(r => r.json());
             sessionStorage.setItem(key, JSON.stringify(myRepos));
