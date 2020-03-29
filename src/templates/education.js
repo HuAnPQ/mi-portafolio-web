@@ -2,12 +2,57 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 export default (props) => {
-    console.log('props.data :', props.data);
+    const pageData = props.data.educacionJson;
     return (
         <div>
-            <header>
-                <h2>{props.data.educacionJson.title}</h2>
+            <header className="py-12 border-green-500 border-solid border-t-8">
+                <div className="max-w-4xl mx-auto">
+                    <h2 className="capitalize text-6xl font-bold">{pageData.title}</h2>
+                    <p className="text-xl">{pageData.description}</p>
+                </div>
             </header>
+            <ul>
+                {
+                    pageData.items.map((item, index) => (
+                        <li className="bg-white shadow mt-4 flex" key="{index}">
+                            <p className="vertical-text">{pageData.slug}</p>
+                            <div className="flex items-center flex-1 p-8">
+                                <div className="flex-1">
+                                    <h3>{item.name}</h3>
+                                    {
+                                        item.degree && <span className="inline-block p-2 radius bg-green-100 text-green-700">
+                                            {item.degree}
+                                        </span>
+                                    }
+                                    {
+                                        item.url && <a href={item.url} target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="btn inline-block mt-4">
+                                            Ver mas
+                                        </a>
+                                    }
+                                    {
+                                        item.description && <p className="inline-block pt-2 text-green-600">
+                                            {item.description}
+                                        </p>
+                                    }
+                                    {
+                                        item.place && <p className="block pt-1 text-green-400 text-xs">
+                                            {item.place}
+                                        </p>
+                                    }
+                                </div>
+                                <div className="inline-block">
+                                    <span className="inline-block p-2 text-2xl bg-green-100 text-green-700">
+                                        {item.score}
+                                        {item.date}
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
     );
 }
@@ -15,6 +60,7 @@ export default (props) => {
 export const query = graphql`
 query ($slug: String ) {
     educacionJson (slug: { eq: $slug }) {
+        slug
         title
         description
         items {

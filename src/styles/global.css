@@ -9,6 +9,7 @@
 }
 
 .repos-list{
+    column-width: 25%;
     columns: 3;
     -moz-columns: 3;
     column-rule: 1px solid;
@@ -16,5 +17,12 @@
 }
 
 .repos-list li{
+    @apply p-4;
     break-inside: avoid-column;
+}
+
+.vertical-text{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    @apply bg-blue-200 text-green-700 text-xs text-center uppercase font-bold p-2 inline-block;
 }
